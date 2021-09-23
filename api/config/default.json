@@ -1,0 +1,11 @@
+{
+    "mysql": {
+        "banco-de-dados": "ga",
+        "usuario": "root",
+        "senha": "123456",
+        "host": "mariadbteste"
+    },
+    "api": {
+        "porta": 3001
+    }
+}
