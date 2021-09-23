@@ -1,7 +1,7 @@
 version: "3" 
 services:
   react:
-    image: reactjsga
+    image: rjscopia
     container_name : reactjs
     ports:
       - "3000:3000" 
@@ -11,7 +11,7 @@ services:
       - ga 
 
   node:
-    image: node-ga-14v1
+    image: nodejscopia
     container_name : nodejs
     ports:
       - "3001:3001" 
