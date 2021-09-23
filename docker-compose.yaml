@@ -1,7 +1,7 @@
 version: "3" 
 services:
   react:
-    image: rjscopia
+    image: reactjsga
     container_name : reactjs
     ports:
       - "3000:3000" 
@@ -11,7 +11,7 @@ services:
       - ga 
 
   node:
-    image: nodejscopia
+    image: node-ga-14v1
     container_name : nodejs
     ports:
       - "3001:3001" 
@@ -20,19 +20,6 @@ services:
     networks:  
       - ga
 
-  # db:
-  #   image: mariadb
-  #   container_name : mariadbteste
-  #   volumes:
-  #     - "db_data:/var/lib/mysql"
-  #     - "./mysql/:/docker-entrypoint-initdb.d"
-  #   ports:
-  #     - "3306:3306"
-  #   environment:
-  #     - MARIADB_ROOT_PASSWORD=123456
-  #     # - MARIADB_DATABASE=ga
-  #   networks:
-  #     - ga
   db:
     image: mariadb:10.4
     container_name : mariadbteste
@@ -51,5 +38,3 @@ networks:
   ga:
     driver: bridge
 
-# volumes:
-#   db_data:
