@@ -15,7 +15,7 @@ Navegue ate a pasta gazin(./gazin) crie a imagem do React
 
 > Após As Imagens Criadas Navegue Até O Diretorio Base E Sobe O Compose
 
-**docker-compose -f "docker-compose.yaml" up -d --build **
+**docker-compose -f "docker-compose.yaml" up -d --build**
 
 
 Quando subir o composer subir chame no navegador **localhost:3000** vai subir o projeto.
